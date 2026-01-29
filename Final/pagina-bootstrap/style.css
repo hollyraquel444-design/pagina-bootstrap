@@ -1,0 +1,75 @@
+/* === style.css === */
+
+/* 1. Variables de tus colores (Estilo Miku) */
+:root {
+  --bg-dots: #dcdcdc;
+  --pink-light: #f8d7d4;
+  --pink-accent: #ff69b4;
+  --teal-main: #66cccc;
+  --teal-dark: #55aaaa;
+  --text-dark: #333;
+}
+
+/* 2. Fondo y Tipografía Base */
+body {
+  background-color: #fff;
+  /* Patrón de puntitos */
+  background-image: radial-gradient(var(--bg-dots) 15%, transparent 16%);
+  background-size: 15px 15px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* 3. Personalizando el Navbar de Bootstrap */
+.navbar-custom {
+  background-color: #f9f9f9;
+  border-bottom: 2px solid var(--teal-dark);
+}
+.nav-link {
+  color: var(--text-dark) !important;
+  font-weight: bold;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--pink-accent) !important;
+  background-color: var(--pink-light);
+  border-radius: 5px;
+}
+
+/* 4. Cajas Estilo "Miku" (Usando bordes de Bootstrap, pero colores nuestros) */
+.miku-card {
+  border: 2px solid var(--teal-main);
+  background: #fff;
+  margin-bottom: 20px; /* Espacio abajo */
+}
+
+.miku-header {
+  background: var(--teal-main);
+  color: white;
+  padding: 8px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid var(--teal-dark);
+}
+
+.miku-body {
+  padding: 15px;
+}
+
+/* 5. Botones Personalizados (Sobrescribiendo Bootstrap) */
+.btn-miku {
+  background-color: var(--teal-main);
+  color: white;
+  border: 2px solid var(--teal-dark);
+  font-weight: bold;
+}
+.btn-miku:hover {
+  background-color: var(--pink-accent);
+  color: white;
+  border-color: #ff1493;
+}
+
+/* 6. Utilidades Extra */
+.pixel-divider {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
